@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS-specific
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# IDE settings
+.vscode/
+.idea/
+
+# Dependency lock files (optional, but not always recommended)
+package-lock.json
+yarn.lock
