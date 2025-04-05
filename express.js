@@ -33,15 +33,13 @@ main()
           console.log(err);
      })
 
+app.get("", (req, res) => {
 
-app.listen(port, () => {
-     console.log(`http://localhost:${port}`);
-});
+     res.sendFile(path.join(__dirname, 'public', 'home.html'));
+})
 
 app.get("/addchats", (req, res) => {
      res.render('add.ejs');
-
-
 })
 
 app.post("/chats", (req, res) => {
@@ -67,3 +65,7 @@ app.delete("/chat/:id", async (req, res) => {
      console.log("data deleted");
      res.redirect("/chats");
 })
+
+app.listen(port, () => {
+     console.log(`http://localhost:${port}`);
+});
