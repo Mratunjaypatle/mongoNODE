@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>write chats</title>
+     <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+     <h5>Write your msg here..</h5>
+
+     <form action="/chats" method="POST">
+          <table>
+
+               <tr>
+                    <td> <input type="text" placeholder="write your name" name="from"> </td>
+               </tr>
+               <tr>
+                    <td>  <textarea name="msg" id=""> </textarea> 
+               <tr>
+                    <td> <input type="text" placeholder="write receiver name" name="to"> </td>
+               </tr>
+
+               <tr>
+                    <td>
+                         <button>send chat</button>
+                    </td>
+               </tr>
+          </table>
+     </form>
+</body>
+
+</html>
